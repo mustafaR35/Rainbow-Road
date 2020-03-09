@@ -1,0 +1,181 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Mar  7 14:53:45 2020
+| Host         : 104PC01 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
+| Design       : top_level
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   103 |
+|    Minimum number of control sets                        |   103 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   405 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   103 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |    95 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     7 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               4 |            3 |
+| Yes          | No                    | No                     |             427 |          208 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              40 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-----------------------------------------+------------------+------------------+----------------+
+|         Clock Signal         |              Enable Signal              | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------------+-----------------------------------------+------------------+------------------+----------------+
+|  not_so_slow/slowclk/clk_out | violetY/in0_1/CE0                       |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out |                                         | hc/i2/Q3_FF_0    |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | violetX/in0_1/CE0_0                     |                  |                4 |              4 |
+|  not_so_slow/slowclk/clk_out | violetX/in0_1/CE0_2                     |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | violetX/in0_1/CE0_7                     |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | yellowY/in0_1/CE0_0                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | yellowY/in0_1/CE0_1                     |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | yellowY/in0_1/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | gc/in0_1/Q1_FF_1                        |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | violetY/in0_1/CE0_1                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | gc/in0_2/Q3_FF_1                        |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | violetY/in0_1/CE0_3                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | sf/in0_2/CE0                            |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | violetY/in0_2/CE0                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | yellowX/in0_1/CE0_7                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | yellowX/in0_1/CE0_0                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | yellowX/in0_1/CE0_2                     |                  |                4 |              4 |
+|  not_so_slow/slowclk/clk_out | redY/in0_1/CE0                          |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | redY/in0_1/CE0_0                        |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | redY/in0_1/CE0_1                        |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | gc/in0_3/Q3_FF_1                        |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | redY/in0_2/CE0                          |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | sf/in0_1/CE0_1                          |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | sf/in0_1/CE0_2                          |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | greenX/in0_1/CE0_0                      |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | f16/in0_1/CE0_1                         |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f16/in0_1/CE0_2                         |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f16/in0_1/CE0                           |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f16/in0_1/CE0_0                         |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | indigoY/in0_1/CE0                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | indigoY/in0_1/CE0_1                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | indigoY/in0_1/CE0_2                     |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | indigoY/in0_2/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | greenX/in0_1/CE0_2                      |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_38/I_36_31_n_0 |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_39/CEO         |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_40/CEO         |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_45/CEO         |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | game/CE0_23                             |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | game/CE057_out                          | game/game_start  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | game/CE0_21                             |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | game/CE0_17                             |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | game/CE0                                |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | game/CE0_15                             |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | game/CE0_19                             |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | game/CE0_13                             |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | greenY/in0_1/CE0                        |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | greenY/in0_1/CE0_0                      |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | greenY/in0_1/CE0_2                      |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | greenX/in0_1/CE0_7                      |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | greenY/in0_2/CE0                        |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | indigoX/in0_1/CE0_0                     |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | indigoX/in0_1/CE0_2                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | indigoX/in0_1/CE0_7                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f128/in0_1/CE0_1                        |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | redX/in0_1/CE0_0                        |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | redX/in0_1/CE0_2                        |                  |                4 |              4 |
+|  not_so_slow/slowclk/clk_out | redX/in0_1/CE0_7                        |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | f128/in0_2/CE0                          |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | f128/in0_3/CE0                          |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | ls64/in0_1/CE0_1                        |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | ls64/in0_2/CE0                          |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | ls64/in0_3/CE0                          |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | blueY/in0_1/CE0                         |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | blueY/in0_1/CE0_1                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | blueY/in0_1/CE0_2                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | blueY/in0_2/CE0                         |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f16/in0_1/Q3_FF_0                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | f1/CE0                                  |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f1/CE0_1                                |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f1/CE0_3                                |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f1/CE0_5                                |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | hc/i2/Q3_FF_0                           | vc/i1/R0         |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | hc/i0/utc1                              | hc/i2/Q3_FF_0    |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | hc/i1/p_1_in                            | hc/i2/Q3_FF_0    |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | blueX/in0_1/CE0_2                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | blueX/in0_1/CE0_0                       |                  |                4 |              4 |
+|  not_so_slow/slowclk/clk_out | blueX/in0_1/CE0_7                       |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | ts/i0/CE01_out                          | game/game_start  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | ts/i1/CE0                               | game/game_start  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | ts/i2/CE03_out                          | game/game_start  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | vc/i0/p_0_in                            | vc/i1/R0         |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | vc/i1/p_1_in                            | vc/i1/R0         |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | vc/i2/CE0_0                             | vc/i1/R0         |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | orangeY/in0_1/CE0                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | orangeY/in0_1/CE0_1                     |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | orangeY/in0_1/CE0_0                     |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | orangeY/in0_2/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | orangeX/in0_1/CE0_2                     |                  |                4 |              4 |
+|  not_so_slow/slowclk/clk_out | orangeX/in0_1/CE0_7                     |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | orangeX/in0_1/CE0_0                     |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | yellowY/in0_2/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f64/in0_1/CE0_1                         |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | f64/in0_1/CE0_2                         |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | f64/in0_2/CE0                           |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | yellowY/in0_1/LD1105_in                 |                  |                6 |             13 |
+|  not_so_slow/slowclk/clk_out | violetY/in0_1/CE                        |                  |                5 |             13 |
+|  not_so_slow/slowclk/clk_out | redY/in0_1/LD187_in                     |                  |                5 |             13 |
+|  not_so_slow/slowclk/clk_out | indigoY/in0_2/LD193_in                  |                  |                5 |             13 |
+|  not_so_slow/slowclk/clk_out | greenY/in0_2/LD1101_in                  |                  |                7 |             13 |
+|  not_so_slow/slowclk/clk_out | blueY/in0_1/LD197_in                    |                  |                8 |             13 |
+|  not_so_slow/slowclk/clk_out | orangeY/in0_1/LD1109_in                 |                  |                4 |             13 |
+|  not_so_slow/slowclk/clk_out |                                         |                  |               12 |             20 |
++------------------------------+-----------------------------------------+------------------+------------------+----------------+
+
+

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab_7.srcs/sources_1/new/Count_4b.v" \
+"../../../../Lab_7.srcs/sources_1/new/Hsync.v" \
+"../../../../Lab_7.srcs/sources_1/new/Vsync.v" \
+"../../../../Lab_7.srcs/sources_1/new/block.v" \
+"../../../../Lab_7.srcs/sources_1/imports/Desktop/lab7_clks.v" \
+"../../../../Lab_7.srcs/sources_1/new/top_level.v" \
+"../../../../Lab_7.srcs/sim_1/imports/Desktop/testSyncs.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
