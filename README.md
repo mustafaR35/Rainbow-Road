@@ -4,6 +4,12 @@ This is a driving game ran on a Basys3 board and displayed on a monitor. The roa
 
 ## Getting Started
 
+  ### Built With
+  
+  - Verilog
+  - Vivado
+  - Basys3 Board
+
   ### Prereqiusites
   
   - Basys3 Board
