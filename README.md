@@ -5,20 +5,17 @@ This is a driving game ran on a Basys3 board and displayed on a monitor. The roa
 ## Getting Started
 
   ### Built With
-  
   - Verilog
   - Vivado
   - Basys3 Board
 
   ### Prereqiusites
-  
   - Basys3 Board
   - Micro USB to USB A cable connecting Basys3 Board to  PC
   - Male to Male VGA cable connecting Basys3 Board to Monitor
   - Vivado 
   
   ### Running
-  
   - download repository
   - open project by double clicking Rainbow-Road.xpr in Rainbow-Road folder
   - connect and turn on Basys3 Board
@@ -35,3 +32,5 @@ This is a driving game ran on a Basys3 board and displayed on a monitor. The roa
     using switch 4, 5, and 6 (sw4, sw5, sw6)
   - your score is displayed at the end of the game
   
+  ### Viewing
+  - download Rainbod_Road_Demo_Video.MOV to view demo video of game played on the Basys3 Board and monitor
