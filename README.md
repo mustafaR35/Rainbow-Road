@@ -8,6 +8,12 @@ This is a driving game ran on a Basys3 board and displayed on a monitor. The roa
   - Verilog
   - Vivado
   - Basys3 Board
+  
+  ### Implemented
+  - Hierarchical Designs
+  - Modules
+  - Bit manipulation
+  - State Machines
 
   ### Prereqiusites
   - Basys3 Board
